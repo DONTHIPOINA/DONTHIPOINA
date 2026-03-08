@@ -1,0 +1,24 @@
+/*A heathcare application needs to calculate needs to calculate the BMI(Body Mass Index) of a person based on their height and weight.create a method calculateBMI()that takes height and weight as a parameters and returns the calculates BMI and corresponding heath status as follow
+bmi<18.5-->underweight
+bmi>=18.5&&bmi<25-->normal
+bmi>=25&&bmi<30-->overweight
+bmi<30-->obese*/
+
+import java.util.*;
+class  Healthcare
+{
+	public  static String calculateBMI(double h,double w)
+	{
+		double bmi=( w)/(h*h);
+		if(bmi>=0 && bmi<18.5)																String res="";
+			res="UnderWeight";																else if(bmi>=18.5 && bmi<25)														res="Normal";																	else if(bmi>=25 && bmi<30)														res="Over weight";																else																			res="Obese";																	return res;																	}}	}																																	
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the height in meters);
+	    double h=sc.nextDouble();
+		System.out.println("enter the weight in kilogram");
+	double w=sc.nextDouble();																
+	System.out.println("heath result is"+calculateBMI(h,w));
+	}
+}
