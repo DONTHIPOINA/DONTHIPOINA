@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-      <div class="container">
-    <div class="text-box">
-      <h1>facebook</h1>
-      <p>Facebook helps you connect and share <br>with the people in your life.</p>
-    </div>
-    <div class="login-box">
-      <form>
-        <input type="text" placeholder="Email address or phone number" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit" class="login-btn">Log In</button>
-        <a href="#" class="forgot">Forgotten password?</a>
-        <hr>
-        <button type="button" class="create-btn">Create New Account</button>
-      </form>
-    </div>
-  </div>
+
+<div class="container">
+    <table border="3" class="table">
+    <tr>
+        <td colspan="4">
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" onclick="clearall()">CE</td>
+        <th  onclick="getval(event)">/</th>
+        <th onclick="getval(event)">*</th>
+    </tr>
+    
+    </button>
+<script src="./app.js"></script>
 </body>
 </html>
